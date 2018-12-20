@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lesson01\BinaryGap.cs" />
+    <Compile Include="Lesson02\CyclicRotation.cs" />
+    <Compile Include="Lesson02\OddOccurrencesInArray.cs" />
+    <Compile Include="Lesson03\FrogJmp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
