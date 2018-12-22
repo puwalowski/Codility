@@ -18,14 +18,29 @@ namespace Codility.Lesson03
 
             result = Run(new[] { 1, 2, 3, 4 });
             Assert.AreEqual(5, result);
+
+            var tmp = Enumerable.Range(1, 100000).ToList();
+            tmp.RemoveAt(0);
+            result = Run(tmp.ToArray());
+            Assert.AreEqual(1, result);
+
+            tmp = Enumerable.Range(1, 100000).ToList();
+            tmp.Remove(1001);
+            result = Run(tmp.ToArray());
+            Assert.AreEqual(1001, result);
         }
 
         private static int Run(int[] A)
         {
-            int n = A.Length + 1;
-            int sumOfAllElements = (n * (1 + n)) / 2;
-            int missingElement = sumOfAllElements - A.Sum();
-            return missingElement;
+            long n = A.Length + 1;
+            long sumOfAllElements = n * (1 + n) / 2;
+
+            for (long i = 0; i < A.Length; i++)
+            {
+                sumOfAllElements -= A[i];
+            }
+
+            return (int)sumOfAllElements;
         }
     }
 }
