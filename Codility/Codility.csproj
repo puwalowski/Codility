@@ -50,6 +50,7 @@
     <Compile Include="Lesson03\TapeEquilibrium.cs" />
     <Compile Include="Lesson04\FrogRiverOne.cs" />
     <Compile Include="Lesson04\PermCheck.cs" />
+    <Compile Include="Lesson05\PassingCars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
