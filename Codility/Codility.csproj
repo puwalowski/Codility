@@ -52,6 +52,7 @@
     <Compile Include="Lesson04\PermCheck.cs" />
     <Compile Include="Lesson05\PassingCars.cs" />
     <Compile Include="Lesson06\Distinct.cs" />
+    <Compile Include="Lesson06\MaxProductOfThree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
