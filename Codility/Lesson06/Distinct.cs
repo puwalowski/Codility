@@ -18,10 +18,7 @@ namespace Codility.Lesson06
 
             for (int i = 0; i < A.Length; i++)
             {
-                if (!hashSet.Contains(A[i]))
-                {
-                    hashSet.Add(A[i]);
-                }
+                hashSet.Add(A[i]);
             }
 
             return hashSet.Count;
