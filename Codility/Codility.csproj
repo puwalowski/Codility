@@ -53,6 +53,7 @@
     <Compile Include="Lesson05\PassingCars.cs" />
     <Compile Include="Lesson06\Distinct.cs" />
     <Compile Include="Lesson06\MaxProductOfThree.cs" />
+    <Compile Include="Lesson06\Triangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
