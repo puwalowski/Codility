@@ -3,18 +3,15 @@ using System.Collections.Generic;
 
 namespace Codility.Lesson07
 {
-    public static class Brackets
+    public static class Nesting
     {
         [Test]
         public static void Test()
         {
-            var result = Run("{[()()]}");
+            var result = Run("(()(())())");
             Assert.AreEqual(1, result);
 
-            result = Run("([)()]");
-            Assert.AreEqual(0, result);
-
-            result = Run(")(");
+            result = Run("())");
             Assert.AreEqual(0, result);
         }
 
@@ -22,31 +19,19 @@ namespace Codility.Lesson07
         {
             var stack = new Stack<char>();
 
-            var bracketPairs = new Dictionary<char, char>
-            {
-                { '(', ')' },
-                { '{', '}' },
-                { '[', ']' }
-            };
-
             foreach (var character in S)
             {
-                if (character == '(' || character == '{' || character == '[')
+                if (character == '(')
                 {
                     stack.Push(character);
                 }
-                else if (character == ')' || character == '}' || character == ']')
+                else if (character == ')')
                 {
                     if (stack.Count == 0)
                     {
                         return 0;
                     }
-
-                    var removed = stack.Pop();
-                    if (character != bracketPairs[removed])
-                    {
-                        return 0;
-                    }
+                    stack.Pop();
                 }
             }
 
