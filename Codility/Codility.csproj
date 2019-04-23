@@ -57,6 +57,7 @@
     <Compile Include="Lesson07\Brackets.cs" />
     <Compile Include="Lesson07\Fish.cs" />
     <Compile Include="Lesson07\Nesting.cs" />
+    <Compile Include="Lesson07\StoneWall.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
